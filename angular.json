@@ -13,7 +13,7 @@
           "inlineTemplate": false,
           "prefix": "so",
           "skipTests": true,
-          "standalone": true
+          "standalone": false
         }
       },
       "root": "",
