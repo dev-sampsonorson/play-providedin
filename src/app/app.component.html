@@ -1,7 +1,12 @@
 <nav>
   <a [routerLink]="'/'">Home</a>
+  <a [routerLink]="'/shared'">Shared</a>
   <a [routerLink]="'/lazy-empty'">Lazy empty</a>
   <a [routerLink]="'/lazy-filled'">Lazy filled</a>
+  <a [routerLink]="'/lazy-declared'">Lazy declared</a>
 </nav>
+<hr />
+<h6>Shared</h6>
+<so-shared></so-shared>
 <hr />
 <router-outlet></router-outlet>

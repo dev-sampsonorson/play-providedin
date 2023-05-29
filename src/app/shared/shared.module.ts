@@ -8,6 +8,10 @@ import { SharedComponent } from './shared.component';
   declarations: [SharedComponent],
   imports: [
     CommonModule
+  ],
+  exports: [SharedComponent],
+  providers: [
+    { provide: 'MY_CONTEXT', useValue: 'SharedModule' },
   ]
 })
 export class SharedModule { }

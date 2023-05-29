@@ -1,11 +1,16 @@
-import { Injectable } from '@angular/core';
+import { Inject, Injectable, Optional } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'any',
+
 })
 export class MessageService {
 
-  constructor() {
-    console.log('init message service');
+  constructor(@Optional() @Inject('MY_CONTEXT') private context: string) {
+    console.log(`${this.context}: init message service`);
+  }
+
+  notify(context: string) {
+    console.log(`${context} called me!`)
   }
 }

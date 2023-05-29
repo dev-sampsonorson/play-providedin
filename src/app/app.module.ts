@@ -16,7 +16,9 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'MY_CONTEXT', useValue: null },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
